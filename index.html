@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RA Garage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">RA Garage</h2>
+          <p class="sub-heading">Garage terpercaya dan amanah</p>
+        </div>
+        <div class="features features-1">
+          <h4 class="price">Vespa Matic</h4>
+          <p class="item">IDR 35jt</p>
+        </div>
+        <div class="features features-2">
+          <h4 class="price">Vespa PTX</h4>
+          <p class="item">IDR 40jt</p>
+        </div>
+      </header>
+
+      <!-- Navbar -->
+      <nav class="menu">
+        <div class="menu-togle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="brand">
+          <h1>RA Garage</h1>
+        </div>
+
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services" id="service">
+        <div class="service">
+          <h3>Bengkel</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni!</p>
+        </div>
+        <div class="service">
+          <h3>Spare Part</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni!</p>
+        </div>
+        <div class="service">
+          <h3>Ganti Ban</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni!</p>
+        </div>
+        <div class="service">
+          <h3>Ganti Oli</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, magni!</p>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/random/200x200" alt="" />
+        <img src="https://source.unsplash.com/random/201x201" alt="" />
+        <img src="https://source.unsplash.com/random/202x202" alt="" />
+        <img src="https://source.unsplash.com/random/203x203" alt="" />
+        <img src="https://source.unsplash.com/random/204x204" alt="" />
+        <img src="https://source.unsplash.com/random/205x205" alt="" />
+        <img src="https://source.unsplash.com/random/206x206" alt="" />
+        <img src="https://source.unsplash.com/random/207x207" alt="" />
+        <img src="https://source.unsplash.com/random/208x208" alt="" />
+        <img src="https://source.unsplash.com/random/209x209" alt="" />
+      </section>
+    </div>
+    <script>
+      const menuTogle = document.querySelector('.menu-togle input');
+      const nav = document.querySelector('nav ul');
+
+      menuTogle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+      });
+    </script>
+  </body>
+</html>
